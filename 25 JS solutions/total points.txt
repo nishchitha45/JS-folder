@@ -1,0 +1,14 @@
+function points(games) {
+  var pts = 0;
+  
+  games.forEach(function(game) {
+    var scores = game.split(':');
+    if(parseInt(scores[0]) > parseInt(scores[1])) {
+      pts += 3;
+    } else if(parseInt(scores[0]) === parseInt(scores[1])) {
+      pts += 1;
+    }
+  })
+  
+  return pts;
+}

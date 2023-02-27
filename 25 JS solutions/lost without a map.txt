@@ -1,0 +1,8 @@
+function maps(x){
+ const newX = [];
+  const lengthX = x.length;
+  for(let i = 0; i < lengthX; i++){
+    newX.push(2 * x[i]);
+  }
+  return newX;
+}

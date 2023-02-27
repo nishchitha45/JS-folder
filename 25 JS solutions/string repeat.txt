@@ -1,0 +1,12 @@
+function repeatStr (n, str) {
+  if (n == 0)
+    return "";
+  let out = "";
+  while (n > 1){
+    if (n & 1)
+      out += str;
+    str += str;
+    n >>= 1;
+  }
+  return out + str;
+}
